@@ -3,17 +3,17 @@ import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week
 function QuestionA(){
     return <section>
 A. Write a function that takes a _name_ as an argument and _returns a string_ that _contains "hello"_ and the name parameter. Test at least 3 names. <br />*Note ... I solved this one already
-      <h2>results</h2>
+      <h2>Results</h2>
       <p>hello("Rich") == "{hello('Rich')}"</p>
       <p>hello("Bill") == "{hello('Bill')}"</p>
       <p>hello("Chris") == "{hello('Chris')}"</p>
-    </section>;
+    </section>
 }
 
 function QuestionB(){
     return <section>
 B. Write a function that converts from fahrenheit to celsius        
-<h2>results</h2>
+<h2>Results</h2>
 <p>fahrenheitToCelsius(32) == "{fahrenheitToCelsius(32)}"</p>
 <p>fahrenheitToCelsius(212) == "{fahrenheitToCelsius(212)}"</p>
 <p>fahrenheitToCelsius(70) == "{fahrenheitToCelsius(70)}"</p>
@@ -34,7 +34,7 @@ function Question1(){
 <p>colour_mix("red", "green") = {colour_mix("red", "green")}</p>
 <p>colour_mix("purple", "green") = {colour_mix("purple", "green")}</p>
     </section>
-};
+}
 
 function Question2(){
     return <section>
@@ -70,6 +70,7 @@ function Question4(){
         <li>3% for part time greater than 10 years service</li>
         <li>1% for part time less than 4 years service</li>
         <li>2% for all others</li>
+        <br></br>
         <b>Results</b>
         <p>pay_raise("F", 3, 45000) = {pay_raise("F", 3, 45000)}</p>
         <p>pay_raise("F", 10, 85000) = {pay_raise("F", 10, 85000)}</p>
@@ -82,12 +83,12 @@ function Question4(){
 
 function Question5(){
     return <section>
-        <h1>5. Determines if a year is a leap year. Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400. For example, the years 1700, 1800, and 1900 are not leap years, but the years 1600 and 2000 are. </h1>
+        <h2>5. Determines if a year is a leap year. Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400. For example, the years 1700, 1800, and 1900 are not leap years, but the years 1600 and 2000 are. </h2>
     <b>Results</b>
-    <p>is_leap(1989) = {is_leap(1989)}</p>
-    <p>is_leap(2024) = {is_leap(2024)}</p>
-    <p>is_leap(2024) = {is_leap(2002)}</p>
-    <p>is_leap(2000) = {is_leap(2000)}</p>
+    <p>is_leap(1989) = {String(is_leap(1989))}</p>
+    <p>is_leap(2024) = {String(is_leap(2024))}</p>
+    <p>is_leap(2024) = {String(is_leap(2002))}</p>
+    <p>is_leap(2000) = {String(is_leap(2000))}</p>
     <p>is_leap("25 BC") = {String(is_leap("25 BC"))}</p>
     </section>
 }

@@ -3,7 +3,7 @@ function hello(name){
 }
 
 function fahrenheitToCelsius(fahrenheit){
-    const celsius = (fahrenheit -32) * 5/9
+    const celsius = ((fahrenheit -32) * 5/9).toFixed(1)
     return celsius;
 }
 
@@ -58,7 +58,7 @@ function largest_product(val1, val2, val3){
     else if (val2 <= val1 && val2 <= val3) // eliminate val2
         {product = val1 * val3;
     }
-    else if (val3 >= val2 && val3 <= val1) // eliminate val3
+    else if (val3 <= val2 && val3 <= val1) // eliminate val3
         {product = val1 * val2;
     }
     else {
@@ -74,7 +74,7 @@ function largest_product(val1, val2, val3){
 
 function day_of_the_week(day_num){
     let day = "";
-    const valid_num = [1,2,3,4,5,6,7];
+    const valid_num = [1, 2, 3, 4, 5, 6, 7];
     if (!valid_num.includes(day_num)) {
         return "error";
     }
@@ -124,13 +124,13 @@ function pay_raise(status, years, salary){
 
     if (status === 'F'){
         if (years >= 10){
-            new_salary = salary * 1.05;
+            new_salary = (salary * 1.05).toFixed(2);
         }
         else if (years < 4) {
-            new_salary = salary * 1.015;
+            new_salary = (salary * 1.015).toFixed(2);
         }
         else {
-            new_salary = salary * 1.02;
+            new_salary = (salary * 1.02).toFixed(2);
         }
     }
 
@@ -138,17 +138,15 @@ function pay_raise(status, years, salary){
 
     if (status === 'P'){
         if (years > 10) {
-            new_salary = salary * 1.03;
+            new_salary = (salary * 1.03).toFixed(2);
         }
         else if (years < 4) {
-            new_salary = salary * 1.01;
+            new_salary = (salary * 1.01).toFixed(2);
         }
         else {
-            new_salary = salary * 1.02;
+            new_salary = (salary * 1.02).toFixed(2);
         }
     }
-
-    const newSalary = salary + (salary * raise_percent);
     
     return new_salary;
 }
