@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, day_of_the_week, pay_raise, is_leap} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
 
 function QuestionA(){
     return <section>
@@ -71,7 +71,7 @@ function Question4(){
         <li>1% for part time less than 4 years service</li>
         <li>2% for all others</li>
         <b>Results</b>
-        <p>pay_raise("F", 3, 45000) = {pay_raise("F",3, 45000)}</p>
+        <p>pay_raise("F", 3, 45000) = {pay_raise("F", 3, 45000)}</p>
         <p>pay_raise("F", 10, 85000) = {pay_raise("F", 10, 85000)}</p>
         <p>pay_raise("P", 15, 25000) = {pay_raise("P", 15, 25000)}</p>
         <p>pay_raise("P", 2, 15000) = {pay_raise("P", 2, 15000)}</p>
@@ -82,18 +82,13 @@ function Question4(){
 
 function Question5(){
     return <section>
-        <h1>5. Determines if a year is a leap year. Every year that is
-    exactly divisible by four is a leap year, except for years
-    that are exactly divisible by 100, but these centurial years
-    are leap years if they are exactly divisible by 400. For
-    example, the years 1700, 1800, and 1900 are not leap years,
-    but the years 1600 and 2000 are.</h1>
+        <h1>5. Determines if a year is a leap year. Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400. For example, the years 1700, 1800, and 1900 are not leap years, but the years 1600 and 2000 are. </h1>
     <b>Results</b>
     <p>is_leap(1989) = {is_leap(1989)}</p>
     <p>is_leap(2024) = {is_leap(2024)}</p>
     <p>is_leap(2024) = {is_leap(2002)}</p>
     <p>is_leap(2000) = {is_leap(2000)}</p>
-    <p>is_leap("25 BC") = {string(is_leap("25 BC"))}</p>
+    <p>is_leap("25 BC") = {String(is_leap("25 BC"))}</p>
     </section>
 }
 

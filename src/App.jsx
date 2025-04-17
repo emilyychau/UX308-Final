@@ -6,7 +6,6 @@ function App() {
         <QuestionA />   
         <QuestionB /> 
         <hr></hr>
-
         <Question1 />
         <Question2 />
         <Question3 />

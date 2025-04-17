@@ -150,7 +150,7 @@ function pay_raise(status, years, salary){
 
     const newSalary = salary + (salary * raise_percent);
     
-    return new_salary.toFixed(2);
+    return new_salary;
 }
 
 // q5
@@ -159,7 +159,7 @@ function is_leap(year){
     if (year <= 0) {
         return "Error";
     }
-    else if (typeof year !== 'number') {
+    else if (typeof year !== "number") {
         return "Error";
     }
 
@@ -174,4 +174,4 @@ function is_leap(year){
     }
 }
 
-export {hello, fahrenheitToCelsius, colour_mix, day_of_the_week, pay_raise, is_leap}
+export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}
