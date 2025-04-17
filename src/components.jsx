@@ -17,12 +17,10 @@ B. Write a function that converts from fahrenheit to celsius
 <p>fahrenheitToCelsius(32) == "{fahrenheitToCelsius(32)}"</p>
 <p>fahrenheitToCelsius(212) == "{fahrenheitToCelsius(212)}"</p>
 <p>fahrenheitToCelsius(70) == "{fahrenheitToCelsius(70)}"</p>
+
+<h1>Final Exam</h1>
     </section>
 }
-
-return <section>
-            <h1>Final Exam</h1>
-</section>
 
 function Question1(){
     return <section>
