@@ -2,7 +2,7 @@ import {fahrenheitToCelsius, hello, colour_mix, day_of_the_week, pay_raise, is_l
 
 function QuestionA(){
     return <section>
-A. Write a function that takes a _name_ as an argument and _returns a string_ that _contains "hello"_ and the name paramerer. Test at least 3 names. <br />*Note ... I solved this one already
+A. Write a function that takes a _name_ as an argument and _returns a string_ that _contains "hello"_ and the name parameter. Test at least 3 names. <br />*Note ... I solved this one already
       <h2>results</h2>
       <p>hello("Rich") == "{hello('Rich')}"</p>
       <p>hello("Bill") == "{hello('Bill')}"</p>
